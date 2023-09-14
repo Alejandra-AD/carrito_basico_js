@@ -10,67 +10,91 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row text-center">
-            <main>
-                <article class="col-sm-4  mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Manzana 🍎</h5>
-                            <button id="1" type="button" class="btn btn-outline-primary"
-                                data-fruta="Manzana">Agregar</button>
-                        </div>
+    <main class="container mt-5 "></main>
+    <div class="row text-center">
+        <article class="col-sm-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manzana 🍎</h5>
+                    <button id="1" type="button" class="btn btn-outline-primary" data-fruta="Manzana">Agregar</button>
+                </div>
+            </div>
+        </article>
+        <article class="col-sm-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Durazno 🍑</h5>
+                    <button id="2" type="button" class="btn btn-outline-primary" data-fruta="Durazno">Agregar</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-sm-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Kiwi 🥝</h5>
+                    <button id="3" type="button" class="btn btn-outline-primary" data-fruta="Kiwi">Agregar</button>
+                </div>
+            </div>
+        </article>
+
+        <section class="container mb-3">
+            <ul class="list-group" id="carrito">
+                <!-- <li class="list-group-item d-flex bg-secondary text-white align-items-center">
+                    <span class="badge bg-primary rounded-pill">12</span>
+                    <span class="lead">Manzana</span>
+
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div id="divTotalProducto">
+                        <p class="divTotal lead mb-0">Total : $<span>300</span></p>
                     </div>
-                </article>
-                <article class="col-sm-4 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Durazno 🍑</h5>
-                            <button id="2" type="button" class="btn btn-outline-primary"
-                                data-fruta="Durazno">Agregar</button>
-                        </div>
+                    <div>
+                        <buttton class="btn btn-success btn-sm btnAgregar">Agregar</buttton>
+                        <buttton class="btn btn-danger btn-sm btnQuitar">Quitar</buttton>
                     </div>
-                </article>
 
-                <article class="col-sm-4 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Kiwi 🥝</h5>
-                            <button id="3" type="button" class="btn btn-outline-primary"
-                                data-fruta="Kiwi">Agregar</button>
-                        </div>
+                </li> -->
+            </ul>
+
+        </section>
+        <footer id="footer" class="container mt-3">
+            <template class="footer">
+                <div class="card">
+                    <div class="footer card-body d-flex justify-content-between align-items-center">
+                        <p class="lead mb-0">Total $<span>1500</span></p>
+                        <button class="btn btn-primary ">Finalizar
+                            compra</button>
                     </div>
-                </article>
+                </div>
+            </template>
 
-                <section class="container mb-3">
-                    <ul class="list-group" id="carrito">
-                        <li class="list-group-item">
-                            <span class="badge bg-primary rounded-pill">12</span>
-                            <span class="lead">Manzana</span>
-                            
-                        </li>
-                        <li class="totalProducto list-group-item d-flex justify-content-between align-items-center">
-                            <span class="badge bg-primary rounded-pill">12</span>
-                            <span class="lead">Manzana</span>
-                            
-                        </li>
-                    </ul>
+        </footer>
 
-                </section>
+        <template id="template">
+            <li class="list-group-item d-flex bg-secondary text-white align-items-center">
+                <span class="badge bg-primary rounded-pill">12</span>
+                <span class="lead">Manzana</span>
 
-                <template>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <span class="lead">Manzana</span>
-                            <span class="badge bg-primary rounded-pill">12</span>
-                        </li>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div id="divTotalProducto">
+                    <p class="divTotal lead mb-0">Total : $<span>300</span></p>
+                </div>
+                <div>
+                    <buttton class="btn btn-success btn-sm btnAgregar">Agregar</buttton>
+                    <buttton class="btn btn-danger btn-sm btnQuitar">Quitar</buttton>
+                </div>
 
-                </template>
+            </li>
 
-            </main>
+        </template>
 
-        </div>
+        
+
     </div>
-
+    </main>
+<script src="index.js"></script>
 </body>
 
 </html>
