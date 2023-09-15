@@ -16,7 +16,8 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Manzana 🍎</h5>
-                    <button id="1" type="button" class="btn btn-outline-primary" data-fruta="Manzana">Agregar</button>
+                    <p class="lead mb-0" id = "precio" >$<span>100</span></p>
+                    <button id="1" type="button" class="btn btn-outline-primary" data-fruta="Manzana" data-precio="100">Agregar</button>
                 </div>
             </div>
         </article>
@@ -24,7 +25,8 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Durazno 🍑</h5>
-                    <button id="2" type="button" class="btn btn-outline-primary" data-fruta="Durazno">Agregar</button>
+                    <p class="lead mb-0" id = "precio" >$<span>200</span></p>
+                    <button id="2" type="button" class="btn btn-outline-primary" data-fruta="Durazno" data-precio="200" >Agregar</button>
                 </div>
             </div>
         </article>
@@ -33,7 +35,8 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Kiwi 🥝</h5>
-                    <button id="3" type="button" class="btn btn-outline-primary" data-fruta="Kiwi">Agregar</button>
+                    <p class="lead mb-0" id = "precio" >$<span>150</span></p>
+                    <button id="3" type="button" class="btn btn-outline-primary" data-fruta="Kiwi" data-precio="150">Agregar</button>
                 </div>
             </div>
         </article>
@@ -59,7 +62,7 @@
 
         </section>
         <footer id="footer" class="container mt-3">
-            <template class="footer">
+            <template class="footer" id="templateFooter">
                 <div class="card">
                     <div class="footer card-body d-flex justify-content-between align-items-center">
                         <p class="lead mb-0">Total $<span>1500</span></p>
@@ -73,13 +76,13 @@
 
         <template id="template">
             <li class="list-group-item d-flex bg-secondary text-white align-items-center">
-                <span class="badge bg-primary rounded-pill">12</span>
-                <span class="lead">Manzana</span>
+                <span class="badge bg-primary rounded-pill" id="cantidad">12</span>
+                <span class="lead" id="nombreProducto">Manzana</span>
 
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div id="divTotalProducto">
-                    <p class="divTotal lead mb-0">Total : $<span>300</span></p>
+                    <p class="divTotal lead mb-0">Total: $<span id="precioProducto">300</span></p>
                 </div>
                 <div>
                     <buttton class="btn btn-success btn-sm btnAgregar">Agregar</buttton>
