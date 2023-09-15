@@ -26,10 +26,16 @@ const agregarCarrito = (e)=>{ //pasamos el evento para
         cantidad : 1,
         precio:parseInt(e.target.dataset.precio)
      }
-
+     const index = productoCarrito.findIndex(item => item.id === producto.id); //recorre el array comparando ids
+     console.log(index);
+     if (index === -1){
+        productoCarrito.push(producto);
+     }else{
+        productoCarrito[index].cantidad++;
+     }
      console.log(producto);
     //  console.log(e.target.dataset.id);
-    productoCarrito.push(producto);
+    
 
 
     pintarCarrito(producto);
