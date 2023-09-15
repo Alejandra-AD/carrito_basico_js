@@ -13,6 +13,18 @@ document.addEventListener("click", (e)=>{
     console.log(e.target.matches(".btn-outline-primary")); //entrega un false o un true
     agregarCarrito(e);
     // console.log(e.target);
+
+    if(e.target.matches(".btnSumar")){
+
+        sumarProducto(e);
+        console.log("Agregar producto");
+
+    }else if(e.target.matches(".btnQuitar")){
+        // quitarProducto(e);
+        console.log("Quitar producto");
+
+    }
+
 });
 
 
@@ -33,7 +45,7 @@ const agregarCarrito = (e)=>{ //pasamos el evento para
      }else{
         productoCarrito[index].cantidad++;
      }
-     console.log(producto);
+    //  console.log(producto);
     //  console.log(e.target.dataset.id);
     
 
@@ -69,3 +81,17 @@ const pintarCarrito = () => {
 
 
 //solo falta la logica para q se sume y quiten productos ademas de pintar el total.
+
+// const sumarProducto = (e) => {
+   
+//    productoCarrito = productoCarrito.map(item =>{
+//     console.log("agregar producto " + e.target.dataset.id);
+
+//     if (item.id === e.target.id){
+//         item.cantidad++;
+//     }return item;
+
+//    });
+   
+//    pintarCarrito();
+// }
