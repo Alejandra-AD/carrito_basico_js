@@ -123,6 +123,9 @@ const pintarFooter = () => {
 
     const cloneFooter = templateFooter.content.cloneNode(true);
     cloneFooter.querySelector("span").textContent = total;
+    if (total === 0) {
+        return
+    }
 
     footer.appendChild(cloneFooter);
     
